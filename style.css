@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333; /* Dark text for readability */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #007bff; /* Blue color for the title */
+}
+
+canvas {
+    margin-top: 20px;
+    border: 1px solid #ddd; /* Light border around the canvas */
+}
