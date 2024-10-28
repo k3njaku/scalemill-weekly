@@ -36,8 +36,32 @@ h2 {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
+    position: relative;
+    display: inline-block;
 }
 
 .campaign-list a:hover {
     color: #0056b3;
+}
+
+.campaign-list a::after {
+    content: "Weekly     Monthly";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: white;
+    padding: 5px;
+    border-radius: 30px;
+    border: 2px solid black;
+    width: 120px;
+    text-align: center;
+}
+
+.campaign-list a:hover::after {
+    opacity: 1;
 }
